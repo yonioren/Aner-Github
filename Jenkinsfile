@@ -12,7 +12,7 @@ pipeline {
     stage('Shine') {
       steps {
         echo 'Shining'
-        sh 'bash -c "dmidecode -s system-product-name"'
+        sh 'bash -c "echo $SHELL"'
         echo 'Shined'
       }
     }
